@@ -1,0 +1,74 @@
+.login {
+  height: 100vh;
+  background-color: $primary;
+  z-index: 1031;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  input{
+    color: #FFFF !important;
+    -webkit-text-fill-color: #FFFF !important;
+  }
+  label {
+  color: #FFFF !important;
+  }
+  .card-login {
+    padding-top: 0 !important;
+    border: none;
+    margin: 0 auto;
+    h2 {
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+    }
+    .contenido {
+      .contenedor-logo {
+        margin-bottom: 70px;
+        padding-top: 30px;
+        text-align: center;
+        &.logo-registro {
+          margin-bottom: 0;
+          img {
+            width: 100px;
+          }
+          h1 {
+            font-size: 36px;
+          }
+        }
+        img {
+          width: 222px;
+        }
+        h1 {
+          color: $white;
+          font-size: 85px;
+        }
+      }
+      .input-login {
+        height: 48px;
+        i svg {
+          fill: $white;
+        }
+      }
+      .md-field.md-theme-default:after {
+        background-color: $white;
+      }
+      .contenedor-error {
+        color: $black;
+        margin: 0 auto;
+        h2 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .empty-space {
+        height: 90px;
+      }
+      .custom-btn {
+        margin-top: 25px;
+      }
+    }
+  }
+}

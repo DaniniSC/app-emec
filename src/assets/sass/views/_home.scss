@@ -1,0 +1,31 @@
+.home {
+  .map {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    iframe {
+      width: 100vw !important;
+      height: 100vh !important;
+      min-height: 100vh !important;
+    }
+    
+  }
+}
+.solicitar-servicio {
+  position: inherit;
+  bottom: 80px;
+  right: 20px;
+  background: white;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $blue;
+  border: 3px solid $blue;
+  &:hover {
+    cursor: pointer;
+    color: white;
+    background: $blue;
+  }
+}

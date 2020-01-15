@@ -1,0 +1,22 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.maintenance {
+  color: white;
+  height: 100%;
+  padding-top: 50%;
+  background-color: $primary;
+}

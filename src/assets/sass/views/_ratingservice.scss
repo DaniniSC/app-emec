@@ -1,0 +1,125 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+.calificar-servicio {
+  text-align: center;
+  // 5 estrellas
+  fieldset.rating-stars {
+    float: none;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  fieldset, label { margin: 0; padding: 0; }
+
+  .rating-5s {
+    width: 100%;
+    height: 50px;
+  }
+
+  .rating-stars { 
+    border: none;
+    float: left;
+  }
+
+  label {
+    font-size: 35px;
+  }
+
+  .rating-stars > input { display: none; } 
+  .rating-stars > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+
+  .rating-stars > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+
+  .rating-stars > label { 
+    color: #ddd; 
+  float: right; 
+  }
+
+
+  .rating-stars > input:checked ~ label, 
+  .rating-stars:not(:checked) > label:hover,
+  .rating-stars:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+
+  .rating-stars > input:checked + label:hover, 
+  .rating-stars > input:checked ~ label:hover,
+  .rating-stars > label:hover ~ input:checked ~ label, 
+  .rating-stars > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+  // Reconocimientos
+
+  .rating {
+    width: 100%;
+    text-align: center;
+  }
+
+  svg {
+    fill: rgb(242, 242, 242);
+    height: 3.6rem;
+    width: 3.6rem;
+    margin: 0.2rem;
+  }
+
+  .rating-form img {
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem;
+  }
+  .rating-form label {
+    min-height: 130px;
+    display: inline-table;
+    margin: 5px;
+  }
+
+  .rating-form p {
+    font-size: 14px;
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #radios label {
+    position: relative;
+    min-height: 130px;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+
+  input[type="radio"] + img {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  input + img {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  input[class="excelente-servicio"]:hover + img,
+  input[class="excelente-servicio"]:checked + img,
+  input[class="excelente-servicio"]:focus + img,
+  input[class="amable"]:hover + img,
+  input[class="amable"]:checked + img,
+  input[class="amable"]:focus + img,
+  input[class="respetuoso"]:hover + img,
+  input[class="respetuoso"]:checked + img,
+  input[class="respetuoso"]:focus + img,
+  input[class="rapido-llegar"]:hover + img,
+  input[class="rapido-llegar"]:checked + img,
+  input[class="rapido-llegar"]:focus + img {
+    border: 3px solid black;
+  }
+}

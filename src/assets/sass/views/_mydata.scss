@@ -1,0 +1,14 @@
+.personal-data,
+.car-data {
+  .cont-datos {
+    .dato {
+      font-size: 18px;
+      border-bottom: 1px solid grey;
+      padding: 10px 20px;
+      margin-bottom: 0;
+      .label {
+        font-weight: bold;
+      }
+    }
+  }
+}

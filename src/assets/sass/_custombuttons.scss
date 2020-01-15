@@ -1,0 +1,14 @@
+.custom-btn {
+  .btn {
+    border-radius: 38px;
+    font-weight: bold;
+  }
+  .custom-btnprimary {
+    background-color: $primary;
+    color: $white;
+  }
+  .custom-btnsecundary {
+    background-color: $white;
+    color: $primary;
+  }
+}
